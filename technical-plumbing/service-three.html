@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Three | {{name}}</title>
+<meta name="description" content="Service Three from {{name}} in {{cityState}}. Short description goes here.">
+<!-- security: content security policy + referrer policy (github pages cannot set http headers) -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index, follow">
+<!-- fonts: swap or remove these two lines to change fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- main stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="services">
+
+<!-- header: built by js/site.js from js/config.js -->
+<div id="site-header"></div>
+
+<!-- page title banner -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <a href="services.html">Services</a> / Service Three</div>
+    <h1>Service Three</h1>
+    <p>A one-sentence summary of this service goes here.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="grid grid-2" style="gap:56px;">
+      <div class="card">
+        <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v4H4zM6 8v12M18 8v8a4 4 0 0 1-4 4h-2"/></svg></div>
+        <h3>Option A</h3>
+        <p>A short description of option A goes here.</p>
+        <ul style="color:var(--gray-600); padding-left:20px;">
+          <li>Example item one</li>
+          <li>Example item two</li>
+          <li>Example item three</li>
+          <li>Example item four</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18"/></svg></div>
+        <h3>Option B</h3>
+        <p>A short description of option B goes here.</p>
+        <ul style="color:var(--gray-600); padding-left:20px;">
+          <li>Example item one</li>
+          <li>Example item two</li>
+          <li>Example item three</li>
+          <li>Example item four</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- bottom call-to-action band -->
+<section class="cta-band">
+  <div class="container">
+    <h2>A Closing Message for This Service</h2>
+    <p>Ask us about this service during your free quote.</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="contact.html" class="btn btn-navy">Request a Quote</a>
+      <a href="tel:{{phoneTel}}" class="btn btn-outline">Call {{phoneDisplay}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- footer: built by js/site.js from js/config.js -->
+<div id="site-footer"></div>
+<!-- config first, then shared site script -->
+<script src="js/config.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

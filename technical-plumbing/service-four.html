@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Four | {{name}}</title>
+<meta name="description" content="Service Four from {{name}} in {{cityState}}. Short description goes here.">
+<!-- security: content security policy + referrer policy (github pages cannot set http headers) -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index, follow">
+<!-- fonts: swap or remove these two lines to change fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- main stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="services">
+
+<!-- header: built by js/site.js from js/config.js -->
+<div id="site-header"></div>
+
+<!-- page title banner -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <a href="services.html">Services</a> / Service Four</div>
+    <h1>Service Four</h1>
+    <p>A one-sentence summary of this service goes here.</p>
+  </div>
+</div>
+
+<section class="bg-navy tight">
+  <div class="container" style="text-align:center;">
+    <h2>Need Help Now? Call Us.</h2>
+    <p>Our line is answered when you need us. [PLACEHOLDER: your availability]</p>
+    <a href="tel:{{phoneTel}}" class="btn btn-primary" style="font-size:1.2rem; padding:18px 36px;">Call {{phoneDisplay}}</a>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What Happens Next</span>
+      <h2>Our Process</h2>
+    </div>
+    <div class="steps" style="max-width:760px; margin:0 auto;">
+      <div class="step"><div class="num">1</div><div><h3>Step One</h3><p>A short description of this step goes here.</p></div></div>
+      <div class="step"><div class="num">2</div><div><h3>Step Two</h3><p>A short description of this step goes here.</p></div></div>
+      <div class="step"><div class="num">3</div><div><h3>Step Three</h3><p>A short description of this step goes here.</p></div></div>
+      <div class="step"><div class="num">4</div><div><h3>Step Four</h3><p>A short description of this step goes here.</p></div></div>
+      <div class="step"><div class="num">5</div><div><h3>Step Five</h3><p>A short description of this step goes here.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- section (grey background) -->
+<section class="bg-off">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Extra Info</span>
+      <h2>A Feature of This Service</h2>
+      <p>A short paragraph explaining a key benefit of this service goes here.</p>
+    </div>
+  </div>
+</section>
+
+<!-- bottom call-to-action band -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Don't Wait &mdash; Get Started Today</h2>
+    <p>Small problems become big ones fast. Get in touch now.</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="contact.html" class="btn btn-navy">Request a Quote</a>
+      <a href="tel:{{phoneTel}}" class="btn btn-outline">Call {{phoneDisplay}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- footer: built by js/site.js from js/config.js -->
+<div id="site-footer"></div>
+<!-- config first, then shared site script -->
+<script src="js/config.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

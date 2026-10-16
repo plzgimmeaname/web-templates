@@ -1,0 +1,9 @@
+# run with: docker compose up
+# files are mounted so edits show up on refresh (no rebuild needed)
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/usr/share/nginx/html:ro

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Financing | {{name}}</title>
+<meta name="description" content="Financing options for customers in {{cityState}}. Flexible payment plans.">
+<!-- security: content security policy + referrer policy (github pages cannot set http headers) -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index, follow">
+<!-- fonts: swap or remove these two lines to change fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- main stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="financing">
+
+<!-- header: built by js/site.js from js/config.js -->
+<div id="site-header"></div>
+
+<!-- page title banner -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Financing</div>
+    <h1>Financing Options</h1>
+    <p>A project shouldn't have to wait on a lump sum. See flexible ways to pay.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="todo-note">
+      <strong>Content needed:</strong> Confirm actual financing partner, approval terms, APR ranges, and application process before publishing specifics.
+    </div>
+    <div class="grid grid-2" style="align-items:center; gap:56px;">
+      <div>
+        <span class="eyebrow">Why Financing</span>
+        <h2>Making a Necessary Project Affordable</h2>
+        <p>Whether it's something urgent or a project you'd rather not put off, financing can spread the cost into manageable monthly payments.</p>
+        <ul style="color:var(--gray-600); padding-left:20px;">
+          <li>Quick online application, most decisions same-day</li>
+          <li>Multiple term-length options</li>
+          <li>No prepayment penalty [confirm with lender]</li>
+          <li>Applies to most services</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:10px;">Ask About Financing</a>
+      </div>
+      <div class="photo-placeholder" style="min-height:280px;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        <div class="ph-label">Financing partner logo</div>
+        <div class="ph-note">[PLACEHOLDER: your financing partner's name]</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- section (grey background) -->
+<section class="bg-off">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Financing Questions</h2>
+    </div>
+    <div style="max-width:760px; margin:0 auto;">
+      <details class="accordion-item" open>
+        <summary>How do I apply?</summary>
+        <p>[PLACEHOLDER: describe the application flow &mdash; online form, soft credit check, approval time.]</p>
+      </details>
+      <details class="accordion-item">
+        <summary>What credit score is typically required?</summary>
+        <p>[PLACEHOLDER: confirm minimum requirements with the financing partner.]</p>
+      </details>
+      <details class="accordion-item">
+        <summary>What are the term lengths and rates?</summary>
+        <p>[PLACEHOLDER: list actual term/APR options once confirmed.]</p>
+      </details>
+      <details class="accordion-item">
+        <summary>Can financing cover a repair, not just a full replacement?</summary>
+        <p>[PLACEHOLDER: confirm minimum project size, if any.]</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- bottom call-to-action band -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Want to See What You'd Qualify For?</h2>
+    <p>Ask us during your free quote &mdash; no obligation.</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="contact.html" class="btn btn-navy">Request a Quote</a>
+      <a href="tel:{{phoneTel}}" class="btn btn-outline">Call {{phoneDisplay}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- footer: built by js/site.js from js/config.js -->
+<div id="site-footer"></div>
+<!-- config first, then shared site script -->
+<script src="js/config.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Areas | {{name}}</title>
+<meta name="description" content="{{name}} serves {{cityState}} and the surrounding areas. See our full list of cities and counties served.">
+<!-- security: content security policy + referrer policy (github pages cannot set http headers) -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index, follow">
+<!-- fonts: swap or remove these two lines to change fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- main stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="service-areas">
+
+<!-- header: built by js/site.js from js/config.js -->
+<div id="site-header"></div>
+
+<!-- page title banner -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Service Areas</div>
+    <h1>Where We Work</h1>
+    <p>Proudly serving {{cityState}} and the surrounding areas.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="todo-note">
+      <strong>Content needed:</strong> Confirm the exact list of areas served (site currently only says "50 mile radius").
+    </div>
+
+    <div class="map-embed" style="margin-bottom:48px;">
+      <iframe data-map-zoom="11" loading="lazy" referrerpolicy="no-referrer-when-downgrade" sandbox="allow-scripts allow-same-origin allow-popups" title="{{name}} service area map"></iframe>
+    </div>
+
+    <div class="section-head">
+      <span class="eyebrow">Full Coverage List</span>
+      <h2>Areas We Serve</h2>
+      <p>Don't see your area listed? Call us &mdash; we may still be able to help.</p>
+    </div>
+
+    <ul class="area-list">
+      <li>{{city}}</li>
+      <li>Area Two</li>
+      <li>Area Three</li>
+      <li>Area Four</li>
+      <li>Area Five</li>
+      <li>Area Six</li>
+      <li>Area Seven</li>
+      <li>Area Eight</li>
+      <li>Area Nine</li>
+      <li>Area Ten</li>
+      <li>Area Eleven</li>
+      <li>Area Twelve</li>
+      <li>Area Thirteen</li>
+      <li>Area Fourteen</li>
+      <li>Area Fifteen</li>
+      <li>[PLACEHOLDER: confirm full list]</li>
+    </ul>
+  </div>
+</section>
+
+<!-- bottom call-to-action band -->
+<section class="cta-band">
+  <div class="container">
+    <h2>See Your Address on the List?</h2>
+    <p>Get a free quote &mdash; we respond fast across our whole service area.</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="contact.html" class="btn btn-navy">Request a Quote</a>
+      <a href="tel:{{phoneTel}}" class="btn btn-outline">Call {{phoneDisplay}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- footer: built by js/site.js from js/config.js -->
+<div id="site-footer"></div>
+<!-- config first, then shared site script -->
+<script src="js/config.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Free Quote | {{name}}</title>
+<meta name="description" content="Request a free quote or contact {{name}} in {{cityState}}.">
+<!-- security: content security policy + referrer policy (github pages cannot set http headers) -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index, follow">
+<!-- fonts: swap or remove these two lines to change fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- main stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+
+<!-- header: built by js/site.js from js/config.js -->
+<div id="site-header"></div>
+
+<!-- page title banner -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+    <h1>Get a Free Quote</h1>
+    <p>Tell us what's going on and we'll get back to you fast &mdash; usually the same day.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="grid grid-2" style="gap:48px; align-items:flex-start;">
+
+      <div class="form-card">
+        <!-- quote form: handled by js/site.js (set formEndpoint in js/config.js) -->
+        <form id="quote-form" novalidate>
+          <div class="form-two">
+            <div class="form-row">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-row">
+            <label for="address">Property Address *</label>
+            <input type="text" id="address" name="address" required>
+          </div>
+          <div class="form-row">
+            <label for="service">What do you need help with?</label>
+            <select id="service" name="service">
+              <option value="">Select one&hellip;</option>
+              <option>Service One</option>
+              <option>Service Two</option>
+              <option>Service Three</option>
+              <option>Service Four</option>
+              <option>Not Sure &mdash; Need an Inspection</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Brief Description</label>
+            <textarea id="message" name="message" placeholder="Tell us a little about what you need, your timeline, and any questions."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Request My Free Quote</button>
+          <p class="form-note">We typically respond within one business day, often the same day. Your information is used only to contact you about your quote and is never sold or shared.</p>
+        </form>
+        <div id="form-confirmation" style="display:none; text-align:center; padding:20px 0;">
+          <h3 style="color:var(--navy);">Thanks &mdash; we got it!</h3>
+          <p>Someone from our team will reach out shortly. For anything urgent, call us directly at <a href="tel:{{phoneTel}}">{{phoneDisplay}}</a>.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="card" style="margin-bottom:24px;">
+          <h3>Contact Info</h3>
+          <p style="margin-bottom:6px;"><strong style="color:var(--navy);">Phone:</strong> <a href="tel:{{phoneTel}}">{{phoneDisplay}}</a></p>
+          <p style="margin-bottom:6px;"><strong style="color:var(--navy);">Hours:</strong> {{hours}}</p>
+          <p><strong style="color:var(--navy);">Service Area:</strong> {{cityState}} &amp; surrounding areas &mdash; <a href="service-areas.html">full list</a></p>
+        </div>
+        <div class="map-embed">
+          <iframe data-map-zoom="15" loading="lazy" referrerpolicy="no-referrer-when-downgrade" sandbox="allow-scripts allow-same-origin allow-popups" title="{{name}} location map" style="height:240px;"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="bg-navy tight">
+  <div class="container" style="text-align:center;">
+    <h2>Need Help Right Away?</h2>
+    <p>Skip the form and call us directly.</p>
+    <a href="tel:{{phoneTel}}" class="btn btn-primary">Call {{phoneDisplay}}</a>
+  </div>
+</section>
+
+<!-- footer: built by js/site.js from js/config.js -->
+<div id="site-footer"></div>
+<!-- config first, then shared site script -->
+<script src="js/config.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

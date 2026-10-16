@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Two | {{name}}</title>
+<meta name="description" content="Service Two from {{name}} in {{cityState}}. Short description goes here.">
+<!-- security: content security policy + referrer policy (github pages cannot set http headers) -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index, follow">
+<!-- fonts: swap or remove these two lines to change fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- main stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="services">
+
+<!-- header: built by js/site.js from js/config.js -->
+<div id="site-header"></div>
+
+<!-- page title banner -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <a href="services.html">Services</a> / Service Two</div>
+    <h1>Service Two</h1>
+    <p>A one-sentence summary of this service goes here.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Materials</span>
+      <h2>Options We Offer</h2>
+    </div>
+    <div class="grid grid-4">
+      <div class="card"><h3>Option One</h3><p>A short description of this option goes here.</p></div>
+      <div class="card"><h3>Option Two</h3><p>A short description of this option goes here.</p></div>
+      <div class="card"><h3>Option Three</h3><p>A short description of this option goes here.</p></div>
+      <div class="card"><h3>Option Four</h3><p>A short description of this option goes here.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- section (grey background) -->
+<section class="bg-off">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our Process</span>
+      <h2>How a Larger Project Works</h2>
+    </div>
+    <div class="steps" style="max-width:760px; margin:0 auto;">
+      <div class="step"><div class="num">1</div><div><h3>Consultation</h3><p>We talk through your options and budget.</p></div></div>
+      <div class="step"><div class="num">2</div><div><h3>Written Estimate</h3><p>A detailed, itemized quote &mdash; including any financing options you'd like to explore.</p></div></div>
+      <div class="step"><div class="num">3</div><div><h3>Scheduling &amp; Materials</h3><p>We order what's needed and schedule the job around your timeline.</p></div></div>
+      <div class="step"><div class="num">4</div><div><h3>Work Begins</h3><p>[PLACEHOLDER: typical timeline for this service.]</p></div></div>
+      <div class="step"><div class="num">5</div><div><h3>Final Walkthrough &amp; Cleanup</h3><p>Full cleanup and a walkthrough before we consider the job done.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="grid grid-2" style="align-items:center; gap:56px;">
+      <div class="ba-pair">
+        <div class="photo-placeholder"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg><div class="ph-label">Before</div></div>
+        <div class="photo-placeholder"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg><div class="ph-label">After</div></div>
+      </div>
+      <div>
+        <span class="eyebrow">Financing</span>
+        <h2>Don't Let Cost Delay a Necessary Project</h2>
+        <p>We offer financing options so a larger project doesn't have to be an all-at-once expense. [PLACEHOLDER: financing partner name and terms.]</p>
+        <a href="financing.html" class="btn btn-navy">See Financing Options</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- bottom call-to-action band -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Ready for a Quote?</h2>
+    <p>Get a detailed, honest estimate &mdash; no pressure, no gimmicks.</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="contact.html" class="btn btn-navy">Request a Quote</a>
+      <a href="tel:{{phoneTel}}" class="btn btn-outline">Call {{phoneDisplay}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- footer: built by js/site.js from js/config.js -->
+<div id="site-footer"></div>
+<!-- config first, then shared site script -->
+<script src="js/config.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{name}} | Services in {{cityState}}</title>
+<meta name="description" content="{{name}} serves {{cityState}}. Short description of your business and services goes here. Free quotes.">
+<!-- security: content security policy + referrer policy (github pages cannot set http headers) -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index, follow">
+<!-- fonts: swap or remove these two lines to change fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- main stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+<!-- header: built by js/site.js from js/config.js -->
+<div id="site-header"></div>
+
+<!-- hero: main headline + call to action -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div>
+      <span class="eyebrow">{{cityState}} &middot; Locally Owned</span>
+      <h1>Services You Can Actually Trust</h1>
+      <p class="lead">Whatever you need help with &mdash; {{name}} gives {{city}}-area customers honest inspections, straight answers, and quality work backed by a real local team.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+        <a href="tel:{{phoneTel}}" class="btn btn-outline">Call {{phoneDisplay}}</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item">&#9989; Licensed &amp; Insured</div>
+        <div class="trust-item">&#9201; Fast Response</div>
+        <div class="trust-item">&#127942; Manufacturer Certified*</div>
+      </div>
+    </div>
+    <div class="photo-placeholder" style="min-height:340px; background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.35); color:#cfd6e2;">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+      <div class="ph-label" style="color:#fff;">Hero photo needed</div>
+      <div class="ph-note">Crew on a recent job, or a striking finished-project shot</div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="badge-strip">
+    <div class="badge-item">&#9989; Licensed &amp; Insured</div>
+    <div class="badge-item">&#127942; Manufacturer Certified*</div>
+    <div class="badge-item">&#128077; 5.0&#9733; Google Rating ([number] Reviews)</div>
+    <div class="badge-item">&#128176; Financing Available</div>
+    <div class="badge-item">&#127968; 100% Locally Owned</div>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What We Do</span>
+      <h2>Services for Every Situation</h2>
+      <p>From a small job to a big project, we handle the full range of services &mdash; [PLACEHOLDER: describe what you offer].</p>
+    </div>
+    <div class="grid grid-4">
+      <div class="card">
+        <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg></div>
+        <h3>Service One</h3>
+        <p>A short description of this service goes here.</p>
+        <a href="service-one.html">Learn more &rarr;</a>
+      </div>
+      <div class="card">
+        <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h3>Service Two</h3>
+        <p>A short description of this service goes here.</p>
+        <a href="service-two.html">Learn more &rarr;</a>
+      </div>
+      <div class="card">
+        <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v4H4zM6 8v12M18 8v8a4 4 0 0 1-4 4h-2"/></svg></div>
+        <h3>Service Three</h3>
+        <p>A short description of this service goes here.</p>
+        <a href="service-three.html">Learn more &rarr;</a>
+      </div>
+      <div class="card">
+        <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>Service Four</h3>
+        <p>A short description of this service goes here.</p>
+        <a href="service-four.html">Learn more &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- section (grey background) -->
+<section class="bg-off">
+  <div class="container">
+    <div class="grid grid-2" style="align-items:center; gap:56px;">
+      <div class="photo-placeholder" style="min-height:300px;">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <div class="ph-label">Photo: Owner / crew</div>
+        <div class="ph-note">Puts a face to the business</div>
+      </div>
+      <div>
+        <span class="eyebrow">Why Customers Choose Us</span>
+        <h2>A Real Local Business, Not a Call Center</h2>
+        <p>We're a local, independent company &mdash; not a national franchise or a lead-generation middleman. When you call, you talk to people who live in this community and stand behind their work.</p>
+        <ul style="color:var(--gray-600); padding-left:20px;">
+          <li>Straight, honest inspections with no upsell pressure</li>
+          <li>Direct communication throughout the job</li>
+          <li>[PLACEHOLDER: another reason customers choose you]</li>
+          <li>Cleanup included &mdash; we leave your property the way we found it</li>
+        </ul>
+        <a href="about.html" class="btn btn-navy" style="margin-top:10px;">More About Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Social Proof</span>
+      <h2>What {{city}} Customers Are Saying</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="review-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>The crew was professional and easy to work with from start to finish. The results look great and the job stayed on schedule the whole way through.</p>
+        <div class="review-name">Customer Name</div>
+        <div class="review-source">Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>This was a big project with several parts. We felt confident going with {{shortName}}.</p>
+        <div class="review-name">Customer Name</div>
+        <div class="review-source">Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>We got quotes from four different companies. {{shortName}} wasn't the cheapest, but the price was fair, and several neighbors had already recommended their work.</p>
+        <div class="review-name">Customer Name</div>
+        <div class="review-source">Google Review</div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:32px;">
+      <a href="reviews.html" class="btn btn-navy">Read All Reviews</a>
+    </div>
+  </div>
+</section>
+
+<!-- section (grey background) -->
+<section class="bg-off">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Recent Projects</span>
+      <h2>A Look at Our Work</h2>
+      <p>A sample of recent repairs and replacements around {{city}}. Full before/after gallery, organized by service type.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="gallery-item">
+        <div class="photo-placeholder"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg><div class="ph-label">Before / After</div></div>
+        <div class="caption"><strong>Project Title One</strong> &mdash; Area Three</div>
+      </div>
+      <div class="gallery-item">
+        <div class="photo-placeholder"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg><div class="ph-label">Before / After</div></div>
+        <div class="caption"><strong>Service Four</strong> &mdash; Area Two</div>
+      </div>
+      <div class="gallery-item">
+        <div class="photo-placeholder"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg><div class="ph-label">Before / After</div></div>
+        <div class="caption"><strong>Project Title Three</strong> &mdash; {{city}}</div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:32px;">
+      <a href="gallery.html" class="btn btn-navy">View Full Gallery</a>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Where We Work</span>
+      <h2>Proudly Serving the Greater {{city}} Area</h2>
+      <p>See the full list of cities and counties we serve.</p>
+    </div>
+    <div class="map-embed" style="max-width:900px; margin:0 auto;">
+      <iframe data-map-zoom="11" loading="lazy" referrerpolicy="no-referrer-when-downgrade" sandbox="allow-scripts allow-same-origin allow-popups" title="{{name}} service area map"></iframe>
+    </div>
+    <div style="text-align:center; margin-top:24px;">
+      <a href="service-areas.html" class="btn btn-navy">See All Service Areas</a>
+    </div>
+  </div>
+</section>
+
+<!-- bottom call-to-action band -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Get a Free, No-Pressure Quote</h2>
+    <p>Tell us what's going on and we'll get back to you fast &mdash; usually the same day.</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="contact.html" class="btn btn-navy">Request a Quote</a>
+      <a href="tel:{{phoneTel}}" class="btn btn-outline">Call {{phoneDisplay}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- footer: built by js/site.js from js/config.js -->
+<div id="site-footer"></div>
+<!-- config first, then shared site script -->
+<script src="js/config.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

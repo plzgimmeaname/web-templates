@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Our Work | {{name}}</title>
+<meta name="description" content="Photos of recent projects completed in the {{cityState}} area.">
+<!-- security: content security policy + referrer policy (github pages cannot set http headers) -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index, follow">
+<!-- fonts: swap or remove these two lines to change fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- main stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="gallery">
+
+<!-- header: built by js/site.js from js/config.js -->
+<div id="site-header"></div>
+
+<!-- page title banner -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Gallery</div>
+    <h1>Our Work</h1>
+    <p>A look at recent projects around {{city}}.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="todo-note">
+      <strong>Content needed:</strong> 8&ndash;12 real before/after photo pairs or job-site photos, organized by service type, to replace the placeholders below.
+    </div>
+
+    <div class="filter-bar">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="service-one">Service One</button>
+      <button data-filter="service-two">Service Two</button>
+      <button data-filter="service-four">Service Four</button>
+      <button data-filter="service-three">Service Three</button>
+    </div>
+
+    <div class="grid grid-3">
+
+      <div class="gallery-item" data-category="service-two">
+        <div class="ba-pair">
+          <div class="photo-placeholder"><div class="ph-label">Before</div></div>
+          <div class="photo-placeholder"><div class="ph-label">After</div></div>
+        </div>
+        <div class="caption"><strong>Project Title One</strong> &mdash; {{city}}</div>
+      </div>
+
+      <div class="gallery-item" data-category="service-one">
+        <div class="ba-pair">
+          <div class="photo-placeholder"><div class="ph-label">Before</div></div>
+          <div class="photo-placeholder"><div class="ph-label">After</div></div>
+        </div>
+        <div class="caption"><strong>Project Title Two</strong> &mdash; Area Two</div>
+      </div>
+
+      <div class="gallery-item" data-category="service-four">
+        <div class="ba-pair">
+          <div class="photo-placeholder"><div class="ph-label">Before</div></div>
+          <div class="photo-placeholder"><div class="ph-label">After</div></div>
+        </div>
+        <div class="caption"><strong>Project Title Three</strong> &mdash; Area Three</div>
+      </div>
+
+      <div class="gallery-item" data-category="service-two">
+        <div class="ba-pair">
+          <div class="photo-placeholder"><div class="ph-label">Before</div></div>
+          <div class="photo-placeholder"><div class="ph-label">After</div></div>
+        </div>
+        <div class="caption"><strong>Project Title Four</strong> &mdash; Area Four</div>
+      </div>
+
+      <div class="gallery-item" data-category="service-three">
+        <div class="ba-pair">
+          <div class="photo-placeholder"><div class="ph-label">Before</div></div>
+          <div class="photo-placeholder"><div class="ph-label">After</div></div>
+        </div>
+        <div class="caption"><strong>Project Title Five</strong> &mdash; {{city}}</div>
+      </div>
+
+      <div class="gallery-item" data-category="service-one">
+        <div class="ba-pair">
+          <div class="photo-placeholder"><div class="ph-label">Before</div></div>
+          <div class="photo-placeholder"><div class="ph-label">After</div></div>
+        </div>
+        <div class="caption"><strong>Project Title Six</strong> &mdash; Area Three</div>
+      </div>
+
+      <div class="gallery-item" data-category="service-four">
+        <div class="ba-pair">
+          <div class="photo-placeholder"><div class="ph-label">Before</div></div>
+          <div class="photo-placeholder"><div class="ph-label">After</div></div>
+        </div>
+        <div class="caption"><strong>Project Title Seven</strong> &mdash; Area Two</div>
+      </div>
+
+      <div class="gallery-item" data-category="service-two">
+        <div class="ba-pair">
+          <div class="photo-placeholder"><div class="ph-label">Before</div></div>
+          <div class="photo-placeholder"><div class="ph-label">After</div></div>
+        </div>
+        <div class="caption"><strong>Project Title Eight</strong> &mdash; Area Five</div>
+      </div>
+
+      <div class="gallery-item" data-category="service-three">
+        <div class="ba-pair">
+          <div class="photo-placeholder"><div class="ph-label">Before</div></div>
+          <div class="photo-placeholder"><div class="ph-label">After</div></div>
+        </div>
+        <div class="caption"><strong>Project Title Nine</strong> &mdash; {{city}}</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- bottom call-to-action band -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Like What You See?</h2>
+    <p>Get a free quote for your own project.</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="contact.html" class="btn btn-navy">Request a Quote</a>
+      <a href="tel:{{phoneTel}}" class="btn btn-outline">Call {{phoneDisplay}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- footer: built by js/site.js from js/config.js -->
+<div id="site-footer"></div>
+<!-- config first, then shared site script -->
+<script src="js/config.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

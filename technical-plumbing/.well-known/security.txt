@@ -1,0 +1,4 @@
+# replace with a real contact so people can report security problems
+Contact: mailto:security@example.com
+Expires: 2027-12-31T00:00:00Z
+Preferred-Languages: en

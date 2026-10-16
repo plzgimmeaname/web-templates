@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | {{name}}</title>
+<meta name="description" content="Meet {{name}} — a family-owned company serving {{cityState}} with honest work and real accountability.">
+<!-- security: content security policy + referrer policy (github pages cannot set http headers) -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index, follow">
+<!-- fonts: swap or remove these two lines to change fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- main stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="about">
+
+<!-- header: built by js/site.js from js/config.js -->
+<div id="site-header"></div>
+
+<!-- page title banner -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / About</div>
+    <h1>About {{name}}</h1>
+    <p>A local company built on honest work and real accountability.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="todo-note">
+      <strong>Content needed:</strong> Founding year, owner name(s)/bio, and your company story. Placeholder copy below should be replaced with the real details.
+    </div>
+    <div class="grid grid-2" style="align-items:center; gap:56px;">
+      <div>
+        <span class="eyebrow">Our Story</span>
+        <h2>Founded on a Simple Idea: Do the Job Right</h2>
+        <p>{{name}} was started by [Owner Name], [placeholder for how many] years ago, with one goal: give {{city}}-area customers a provider they can actually trust. [PLACEHOLDER: two or three sentences on the founding story &mdash; why this business, why {{city}}, what problem the founder saw with other providers.]</p>
+        <p>Today, the company is still locally run. That means when you call, you're talking to people who are personally accountable for the work &mdash; not a call center routing you elsewhere.</p>
+      </div>
+      <div class="photo-placeholder" style="min-height:320px;">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <div class="ph-label">Photo: Owner &amp; team</div>
+        <div class="ph-note">The single highest-trust photo on the site</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- section (grey background) -->
+<section class="bg-off">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Credentials</span>
+      <h2>Licensed, Insured, and Certified</h2>
+      <p>Confirm exact wording allowed for display with license/insurance providers before publishing.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg></div>
+        <h3>Licensed &amp; Certified</h3>
+        <p>[State] License #[PLACEHOLDER]. Verify current status with your licensing board before publishing the number.</p>
+      </div>
+      <div class="card">
+        <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg></div>
+        <h3>Fully Insured</h3>
+        <p>General liability and workers' compensation coverage. [PLACEHOLDER: carrier name / coverage amount if you want to display it.]</p>
+      </div>
+      <div class="card">
+        <div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10zM8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg></div>
+        <h3>Manufacturer Certified</h3>
+        <p>[PLACEHOLDER: e.g., Industry Certification, Manufacturer Partner &mdash; list only certifications currently held.]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our Approach</span>
+      <h2>How We Work With Customers</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <div>
+          <h3>Honest Assessment</h3>
+          <p>We look at the whole picture &mdash; not just the one issue you're worried about &mdash; and tell you plainly what needs attention now versus what can wait.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <div>
+          <h3>Clear, Written Quote</h3>
+          <p>No vague estimates. You get a written scope of work and price before anything starts.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <div>
+          <h3>Extra Support (If Needed)</h3>
+          <p>[PLACEHOLDER: describe any extra support you offer, such as paperwork help or follow-up visits.]</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">4</div>
+        <div>
+          <h3>Clean, Accountable Work</h3>
+          <p>We protect your property during the job and do a full cleanup before we call it done.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- bottom call-to-action band -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Want to Talk to a Real Person?</h2>
+    <p>Call us directly or send a quote request &mdash; you'll hear back from the team, not a script.</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="contact.html" class="btn btn-navy">Request a Quote</a>
+      <a href="tel:{{phoneTel}}" class="btn btn-outline">Call {{phoneDisplay}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- footer: built by js/site.js from js/config.js -->
+<div id="site-footer"></div>
+<!-- config first, then shared site script -->
+<script src="js/config.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

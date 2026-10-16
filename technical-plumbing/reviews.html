@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reviews | {{name}}</title>
+<meta name="description" content="Read reviews and testimonials from {{cityState}} customers who worked with {{name}}.">
+<!-- security: content security policy + referrer policy (github pages cannot set http headers) -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index, follow">
+<!-- fonts: swap or remove these two lines to change fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- main stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="reviews">
+
+<!-- header: built by js/site.js from js/config.js -->
+<div id="site-header"></div>
+
+<!-- page title banner -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Reviews</div>
+    <h1>What Customers Are Saying</h1>
+    <p>Real feedback from {{city}}-area customers.</p>
+  </div>
+</div>
+
+<section class="tight bg-off">
+  <div class="container" style="text-align:center;">
+    <div class="stars" style="font-size:1.8rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <h2 style="margin-bottom:4px;">5.0 out of 5</h2>
+    <p>Based on [number] reviews on [review site]</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="grid grid-3">
+      <div class="review-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>The crew was professional and easy to work with from start to finish. The results look great and the job stayed on schedule the whole way through.</p>
+        <div class="review-name">Customer Name</div>
+        <div class="review-source">Google Review &middot; Service Two &amp; Service Three</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>This was a big project with several parts. We compared several providers first and felt confident going with {{shortName}}.</p>
+        <div class="review-name">Customer Name</div>
+        <div class="review-source">Google Review &middot; Service Two &amp; Service Three</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>We got quotes from four different companies. {{shortName}} wasn't the cheapest, but the price was fair, and several neighbors had already recommended their work.</p>
+        <div class="review-name">Customer Name</div>
+        <div class="review-source">Google Review &middot; Service Two</div>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:32px; font-size:0.85rem;">Read all [number] reviews on <a href="https://www.google.com/maps/place/Your+Business+Name" target="_blank" rel="noopener">Google Maps &rarr;</a></p>
+  </div>
+</section>
+
+<!-- bottom call-to-action band -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Ready to Join Our Happy Customers?</h2>
+    <p>Get a free, honest quote today.</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="contact.html" class="btn btn-navy">Request a Quote</a>
+      <a href="tel:{{phoneTel}}" class="btn btn-outline">Call {{phoneDisplay}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- footer: built by js/site.js from js/config.js -->
+<div id="site-footer"></div>
+<!-- config first, then shared site script -->
+<script src="js/config.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
